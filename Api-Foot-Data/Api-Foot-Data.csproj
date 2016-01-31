@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Api_Foot_Data</RootNamespace>
     <AssemblyName>Api-Foot-Data</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +33,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,12 +51,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\FootDataHttpClient.cs" />
+    <Compile Include="Models\Common\Link.cs" />
+    <Compile Include="Models\Common\ErrorResult.cs" />
+    <Compile Include="Models\Common\Links.cs" />
+    <Compile Include="Models\Enums\VenueEnum.cs" />
+    <Compile Include="Models\Results\FixtureDetailsResult.cs" />
+    <Compile Include="Models\Results\LastTeamResult.cs" />
+    <Compile Include="Models\Head2Head.cs" />
+    <Compile Include="Models\Fixture.cs" />
+    <Compile Include="Models\Results\FixturesResult.cs" />
+    <Compile Include="Models\Results\LeagueTableResult.cs" />
+    <Compile Include="Models\ResultMatch.cs" />
+    <Compile Include="Models\Results\SoccerSeasonResult.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Results\PlayersResult.cs" />
+    <Compile Include="Services\FixtureServices.cs" />
+    <Compile Include="Services\SoccerSeasonsServices.cs" />
+    <Compile Include="Models\Results\TeamsResult.cs" />
+    <Compile Include="Services\TeamServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
