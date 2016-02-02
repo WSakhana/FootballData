@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>78478353-fe0a-4ab8-818d-185c9f0c7304</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>FootballDataSDK</Id>
+    <Version>1.0.3</Version>
+    <Title>FootballDataSDK</Title>
+    <Authors>Walid SAKHANA</Authors>
+    <Owners>Walid SAKHANA</Owners>
+    <Summary>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org</Summary>
+    <Description>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>
+    </ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright © WSakhana</Copyright>
+    <Tags>football-data</Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FootballDataSDK\FootballDataSDK.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
