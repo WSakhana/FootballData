@@ -19,17 +19,16 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>FootballDataSDK</Id>
-    <Version>1.0.3</Version>
-    <Title>FootballDataSDK</Title>
+    <Version>1.0.5</Version>
+    <Title>FootballData SDK</Title>
     <Authors>Walid SAKHANA</Authors>
     <Owners>Walid SAKHANA</Owners>
-    <Summary>
-		FootballData SDK is an unofficial C# Library  allowing retrieving data 
+    <Summary>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org
+	</Summary>
+    <Description>FootballData SDK is an unofficial C# Library  allowing retrieving data 
 		from the popular api api.football-data.org.
 		It is intended for use by developer wishing to make theire own football result apps.
-	</Summary>
-	
-    <Description>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org</Description>
+		</Description>
     <ReleaseNotes>
     </ReleaseNotes>
     <ProjectUrl>
