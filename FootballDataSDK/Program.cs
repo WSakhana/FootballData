@@ -1,4 +1,5 @@
-﻿using FootballDataSDK.Services;
+﻿using System;
+using FootballDataSDK.Services;
 
 namespace FootballDataSDK
 {
@@ -6,18 +7,25 @@ namespace FootballDataSDK
     {
         static void Main(string[] args)
         {
-            FootDataServices client = new FootDataServices();
-            client.AuthToken = "e027889b7b464580b2de5cfa491961df";
-            
-            var leagues = client.SoccerSeasons();
-            //396, FL1
-            var fix = client.Fixtures(396, "n7");
-            var eq = client.Teams(396);
-            
-            var ClMatches = client.Fixtures("n20", "PD");
-            var PdMatches = client.Fixtures("n99", "CL");
 
-            var fixx = client.Fixture(140564);
+            FootDataServices client = new FootDataServices();
+            //This is Optional (Can be used without Token, but it's limited [request number])
+            client.AuthToken = "Your Auth-Token Here ...";
+
+            var leagues = client.SoccerSeasons();
+
+            if (string.IsNullOrEmpty(leagues.error))
+            {
+                foreach (var soccerSeason in leagues.Seasons)
+                {
+                    Console.WriteLine(soccerSeason.league + " : " + soccerSeason.caption);
+                }
+            }
+            else
+            {
+                Console.WriteLine("ERROR : " + leagues.error);
+            }
+
         }
     }
     
