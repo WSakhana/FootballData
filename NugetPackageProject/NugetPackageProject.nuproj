@@ -23,7 +23,12 @@
     <Title>FootballDataSDK</Title>
     <Authors>Walid SAKHANA</Authors>
     <Owners>Walid SAKHANA</Owners>
-    <Summary>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org</Summary>
+    <Summary>
+		FootballData SDK is an unofficial C# Library  allowing retrieving data 
+		from the popular api api.football-data.org.
+		It is intended for use by developer wishing to make theire own football result apps.
+	</Summary>
+	
     <Description>The footballData SDK use a HttpClient to retrieve data from the Restful Api api.football-data.org</Description>
     <ReleaseNotes>
     </ReleaseNotes>
@@ -32,7 +37,7 @@
     <LicenseUrl>
     </LicenseUrl>
     <Copyright>Copyright © WSakhana</Copyright>
-    <Tags>football-data</Tags>
+    <Tags>football-data Football championsLeague Leagues</Tags>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />

@@ -14,7 +14,6 @@ namespace FootballDataSDK
             var fix = client.Fixtures(396, "n7");
             var eq = client.Teams(396);
             
-
             var ClMatches = client.Fixtures("n20", "PD");
             var PdMatches = client.Fixtures("n99", "CL");
 
