@@ -16,6 +16,8 @@ Visit https://www.nuget.org/packages/FootballDataSDK
 
 ## Example of use
 ```cs
+using FootballDataSDK.Services;
+
 static void Main(string[] args)
 {
 
