@@ -4,6 +4,9 @@ from the popular api api.football-data.org.
 It is intended for use by developer wishing to make theire own football result apps.
 
 ## Nuget Package
+
+Visit https://www.nuget.org/packages/FootballDataSDK
+
 ```nuget
   To install FootballData SDK, run the following command in the Package Manager Console
   PM > Install-Package FootballDataSDK
